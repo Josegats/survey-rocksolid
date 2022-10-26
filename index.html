@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCKSOLID</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Carta de Liberacion de Responsabilidades</h1>
+    <p id="description">Es necesario llenar los campos obligatorios</p>
+    </header>
+    <div class="survey">
+    <form action="" id="rocksolid-form" required>
+        <fieldset>
+        <label id="name-label">
+            Nombres <input type="text" name="nombres" id="name" placeholder="Nombres" required>
+        </label>
+        <label id="apellido-label">
+            Apellidos <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+        </label>
+        <label id="email-label">
+            Correo Electronico <input type="email" name="email" id="email" placeholder="Correo Electronico" required>
+        </label>
+        <label id="nacimiento-label">
+            Fecha de Nacimiento <input type="date" name="birthday" id="birthday" value="16-10-2018" placeholder="16-10-2022" required>
+        </label>
+        <label id="celular-label">
+            Celular <input type="number" name="celular" id="celular" placeholder="Celular">
+        </label>
+        <label id="colonia-label">
+            Colonia <input type="text" name="colonia" id="colonia" placeholder="Colonia">
+        </label>
+        <label id="codigo-postal-label">
+            Codigo Postal <input type="number" name="codigo-postal" id="codigo-postal" placeholder="Codigo Postal">
+        </label>
+        <label id="person-emergency-contact-label">
+            Nombre Contacto de Emergencia <input type="text" name="person-emergency-contact" id="person-emergency-contact" placeholder="Nombre del Contacto" required>
+        </label>
+        <label id="emergency-contact-phone-label">
+            Telefono de Contacto (contacto de emergencia) <input type="number" name="emergency-contact-phone" id="emergency-contact-phone" placeholder="Telefono del Contacto" required>
+        </label>
+        </fieldset>
+        <fieldset class="middle">
+        <label>Como supiste de nostros? (Opcional)
+            <select name="dropdown" id="dropdown">
+                <option value="">Selecciona una opcion:</option>
+                <option value="1">Google</option>
+                <option value="2">Instagram</option>
+                <option value="3">Facebook</option>
+                <option value="4">Por un amigo</option>
+                <option value="5">Otro</option>
+            </select>
+        </label>
+        <label>
+            Es tu primera vez escalando? (Opcional)
+            <br><br>
+            Si <input type="radio" name="select-not" id="" class="inline">  
+            No <input type="radio" name="select-not" id="" class="inline"> 
+        </label>
+        <label> Cuentas con alguna condicion medica especial? <br><br>
+            <input type="checkbox" name="check" id="checkbox" class="inline" value=""> Problemas Cardiacos
+            <br>
+            <input type="checkbox" name="check" id="checkbox" class="inline" value=""> Problemas Respiratorios
+            <br>
+            <input type="checkbox" name="check" id="checkbox" class="inline" value=""> Alguna lesion, esguince, fractura,etc. 
+            <br>
+            <input type="checkbox" name="check" id="checkbox" class="inline" value=""> Otro
+        </label>
+        </fieldset>
+        <fieldset>
+        <label> Dejanos un comentario
+            <textarea name="textare" id="textarea" cols="30" rows="10"></textarea>
+        </label>
+        </fieldset>
+        <label>
+            <input type="submit" class="btn" id="submit" name="submit" value="Acepto la responsiva y sus terminos">
+        </label>
+    </form>
+    </div>
+</body>
+</html>
